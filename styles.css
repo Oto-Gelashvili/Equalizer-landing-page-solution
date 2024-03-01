@@ -1,0 +1,342 @@
+html {
+  font-size: 62.5%;
+}
+:root {
+  --clr-primary: #fcfaf9;
+  --clr-secondary: #fa7453;
+  --clr-tertiary: #191826;
+  --clr-quaternary: #66e2dc;
+  --clr-quinary: #ffb964;
+
+  --ff-primary: "IBM Plex Sans", sans-serif;
+  --fw-primary: 700;
+  --fw-seconday: 400;
+
+  --fs-p-phone: 1.6rem;
+  --fs-p-tablet: 1.8rem;
+  --fs-p-desktop: 2rem;
+
+  --fs-h1-phone: 4rem;
+  --fs-h1-tablet: 6.4rem;
+  --fs-h1-desktop: 8.8rem;
+
+  --fs-h2-phone-tablet: 3.2rem;
+  --fs-h2-desktop: 4rem;
+
+  --fs-h3-all: 6.5rem;
+
+  --fs-h4-all: 1.8rem;
+
+  --fs-h5-all: 1.6rem;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: var(--ff-primary);
+  background-color: var(--clr-primary);
+  font-weight: var(--fw-primary);
+  color: var(--clr-tertiary);
+  margin-block: 5rem 8rem;
+  background-image: url(assets/bg-main-mobile.png);
+  background-position: right -20rem top -20rem;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.flexbox {
+  display: flex;
+}
+.flexbox--column {
+  display: flex;
+  flex-direction: column;
+}
+.container {
+  margin-inline: auto;
+  margin-inline: 6%;
+  overflow-x: hidden;
+}
+.pattern-1 {
+  display: none;
+}
+/* ************* */
+/* HEADER */
+/* ************* */
+header {
+  margin-bottom: 6.4em;
+}
+.brand-logo {
+  max-height: 3.3rem;
+}
+/* ************* */
+/* Main DESC */
+/* ************* */
+h1 {
+  font-size: var(--fs-h1-phone);
+  line-height: 120%;
+  letter-spacing: -0.45px;
+  margin-bottom: 1.8rem;
+}
+p {
+  font-weight: var(--fw-seconday);
+  font-size: var(--fs-p-phone);
+  line-height: 156%;
+}
+.main-desc {
+  margin-bottom: 13em;
+}
+/* ************* */
+/* Features */
+/* ************* */
+.features {
+  position: relative;
+}
+.pattern-2 {
+  border-radius: 1.2rem;
+  background-color: var(--clr-tertiary);
+  padding-inline: 5em;
+  transform: translate(0, 4rem);
+}
+.pattern-2 img {
+  width: 100%;
+  max-height: 42rem;
+  object-fit: contain;
+}
+.phone-illustration {
+  width: 55%;
+  height: 43rem;
+  position: absolute;
+  z-index: 1;
+  left: 25%;
+  object-fit: contain;
+  top: -5.5%;
+}
+.CTA {
+  color: var(--clr-primary);
+  background-color: var(--clr-secondary);
+  border-radius: 1.2rem;
+  width: 100%;
+  padding-inline: 5em;
+  margin-bottom: 7rem;
+  z-index: 2;
+  position: relative;
+}
+h2 {
+  font-size: var(--fs-h2-phone-tablet);
+  line-height: 4rem;
+  margin-top: 4.8rem;
+  margin-bottom: 1.2rem;
+}
+.desc {
+  margin-bottom: 3.6rem;
+}
+.subscription {
+  align-items: center;
+  margin-bottom: 3.6rem;
+  gap: 1.6rem;
+}
+h3 {
+  font-size: var(--fs-h3-all);
+}
+h4 {
+  font-size: var(--fs-h4-all);
+}
+.ios {
+  background-color: var(--clr-tertiary);
+  padding: 1.6rem 4rem;
+  border-radius: 1.2rem;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.6rem;
+  gap: 0.78rem;
+  letter-spacing: -0.18px;
+}
+.android {
+  background-color: var(--clr-primary);
+  color: var(--clr-tertiary);
+  padding: 1.6rem 4rem;
+  border-radius: 1.2rem;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 4.8rem;
+  gap: 0.78rem;
+  letter-spacing: -0.18px;
+}
+/* ************* */
+/* FOOTER */
+/* ************* */
+footer {
+  flex-direction: column;
+}
+h5 {
+  margin-block: 3.2rem 6.4rem;
+  font-size: var(--fs-h5-all);
+  line-height: 162%;
+  font-weight: var(--fw-seconday);
+}
+footer a {
+  font-weight: var(--fw-primary);
+  color: var(--clr-tertiary);
+}
+a {
+  text-decoration: none;
+}
+.black-link {
+  color: var(--clr-tertiary);
+}
+.white-link {
+  color: var(--clr-primary);
+}
+.socials {
+  gap: 2rem;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    background-image: url(assets/bg-main-tablet.png);
+    background-size: 130%;
+    position: relative;
+    background-position: right -2rem top -20rem;
+  }
+  header {
+    margin-bottom: 9.5rem;
+  }
+  /* ************* */
+  /* MAIN DESC */
+  /* ************* */
+  h1 {
+    font-size: var(--fs-h1-tablet);
+    line-height: 100%;
+    letter-spacing: -0.727273px;
+  }
+  p {
+    font-size: var(--fs-p-tablet);
+  }
+  .pattern-1 {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: -7rem;
+    z-index: -1;
+  }
+  .pattern-1 img {
+    max-width: 26.7rem;
+  }
+  .container {
+    margin-inline: 3.3rem 3.9rem;
+  }
+  .main-desc {
+    width: 67.7%;
+    margin-bottom: 21rem;
+  }
+  .features {
+    margin-inline: 3.3rem 3.9rem;
+    margin-bottom: 26rem;
+  }
+  .CTA {
+    width: 57.4%;
+    position: absolute;
+    left: 35.5%;
+    top: 33%;
+    max-width: 44.6rem;
+  }
+  .phone-illustration {
+    width: 39%;
+    height: 56rem;
+    left: 10%;
+    top: -15.5%;
+    max-width: 32rem;
+    
+  }
+  .pattern-2 {
+    width: 100%;
+    height: 60rem;
+  }
+  .pattern-2 img{
+    padding-left:8rem
+  }
+  footer {
+    gap: 3.2rem;
+  }
+  .footer-part {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .logos {
+    flex-basis: 40%;
+  }
+  br {
+    display: none;
+  }
+  h5 {
+    flex-basis: 48%;
+    margin: 0;
+  }
+}
+@media screen and (min-width: 1440px) {
+  body {
+    background-image: url(assets/bg-main-desktop.png);
+    background-position: right -10rem top -30rem;
+  }
+  .pattern-1 img {
+    max-width: 31rem;
+  }
+  .main-desc {
+    width: 70.5%;
+  }
+  h1 {
+    font-size: var(--fs-h1-desktop);
+  }
+  p {
+    font-size: var(--fs-p-desktop);
+  }
+  .main-desc p {
+    max-width: 85%;
+  }
+  h2{
+    font-size: var(--fs-h2-desktop);
+    margin-top: 5.8rem;
+  }
+  .features{
+    margin-inline: 16.5rem;
+  }
+  .CTA{
+    width: 40.2%;
+    left: 48%;
+    top: 25%;
+  }
+  .phone-illustration{
+    top: -20%;
+  }
+  .pattern-2 img{
+    padding-right: 17rem;
+    padding-bottom: 2rem;
+  }
+  .container{
+    margin-inline: 16.5rem;
+  }
+  footer{
+    flex-direction: row;
+  }
+  h5{
+    flex-basis: 42%;
+  }
+  .ios:hover, .android:hover, .socials a:hover{
+    cursor: pointer;
+    transition: 1.2s;
+  }
+  .ios:hover{
+    background-color: var(--clr-quaternary);
+  }
+  .android:hover{
+    background-color: var(--clr-quinary);
+  }
+  a:hover path{
+    fill: #fa7453;
+    transition: 0.6s;
+  }
+}
